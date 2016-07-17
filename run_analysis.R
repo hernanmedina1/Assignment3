@@ -108,3 +108,5 @@ print(dim(activity_measures))
 #
 activity_groups <- group_by(activity_measures, activity, activity_name, subject)
 mean_by_activity_and_subject <- summarize_all(activity_groups, mean)
+print('dimensions of summarized file')
+print(dim(mean_by_activity_and_subject))
